@@ -11,9 +11,26 @@ var weapons = ["Tiger Woods golf club", "Malaria", "Rihanna\'s thighs", "Explodi
             "the local Applebees", "dimly lit ballroom", "Tron world", "Jurassic Park", "Atlantis", "the VMAs", "the dropoff point of Jim Carreys career",
             "the sandbox", "the nude beach"]
 
+$(document).ready(function() {
+    for(i=1; i<100; i++){
 
-function randomizedWeapon(){
-    console.log(weapons);
-}
+        var randFriend = friendNames[Math.floor(Math.random() * friendNames.length)];
+        var randWeapon = weapons[Math.floor(Math.random() * weapons.length)];
+        var randScene = scenes[Math.floor(Math.random() * scenes.length)];
 
-console.log(randomizedWeapon);
+        accusationHeading= $('<h3> Accusation' +i+ "</h3>").appendTo("body");
+        accusationHeading.click(function(){
+            alert('I accuse '+randFriend+', with the '+randWeapon+' in the '+randScene+ '!');
+        })
+
+    
+       
+       
+    }
+      
+    
+});
+
+
+
+/* create onclick function for each h3 causing an alert popup*/
