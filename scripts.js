@@ -33,4 +33,4 @@ $(document).ready(function() {
 
 
 
-/* create onclick function for each h3 causing an alert popup*/
+/* create onclick function for each h3 causing an alert popups with random math pulling from arrays*/
